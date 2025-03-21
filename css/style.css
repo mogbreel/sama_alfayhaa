@@ -164,6 +164,7 @@
     }
 
     .image {
+        display: none;
         position: relative;
         padding-top: 110%;
     }
