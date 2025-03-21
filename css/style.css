@@ -26,14 +26,14 @@
 
 .image {
     position: absolute;
-    left: 6%;
-    top: 8%;
+    left: 0;
+    top: 0;
     display: flex;
 }
 
 .image img {
-    width: 30vw;
-    height: 75vh;
+    width: 33vw;
+    height: 100vh;
 }
 
 
@@ -45,17 +45,13 @@
 }
 
 .content h1 {
-    font-size: 64px;
+    font-size: 4rem;
     font-weight: 600;
-}
-
-.content p img {
-    width: 80px;
 }
 
 .content #button {
     background: transparent;
-    padding: 30px 20px;
+    padding: 3rem 2rem;
     color: #fff;
     position: relative;
     transition: .3s ease;
@@ -64,38 +60,38 @@
 .content #button::after {
     content: '';
     position: absolute;
-    bottom: 20px;
-    right: 32%;
+    bottom: 2rem;
+    right: 34%;
     width: 0;
     height: 3px;
     background-color: #fff;
 }
 
 .content #button:hover:after {
-    width: 30px;
+    width: 30%;
 }
 
 .content #button i {
-    font-size: 50px;
+    font-size: 4rem;
 }
 
 .content #countdown {
     display: flex;
-    margin: 30px 0;
+    margin: 2rem 0;
 }
 
 .content #countdown div {
-    flex-basis: 100px;
+    flex-basis: 120px;
     text-align: center;
 }
 
 .content #countdown div span {
-    font-size: 60px;
+    font-size: 4rem;
     margin-bottom: -14px;
 }
 
 .content #countdown div .smalltext {
-    font-size: 20px;
+    font-size: 1.5rem;
     margin-bottom: 30px;
 }
 
@@ -137,6 +133,10 @@
     .image img {
         width: 45vw;
     }
+
+    #rocket {
+        left: 50%;
+    }
 }
 
 /*============ SCREEN 768 ===========*/
@@ -148,25 +148,43 @@
     }
 
     .content {
-        top: 25%;
-        position: absolute;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        top: 28%;
+        position: relative;
         transform: translateY(-50%);
         color: #fff;
     }
 
     .content h1 {
-        font-size: 40px;
+        font-size: 3rem;
         font-weight: 600;
+    }
+    .content #countdown {
+        display: flex;
+        justify-content: center;
+    }
+    .content #countdown div {
+        text-align: center;
+        flex-basis: 120px;
+    }
+
+    .content #countdown div span {
+        font-size: 4rem;
+    }
+
+    .content #countdown div .smalltext {
+        font-size: 1.5rem;
     }
 
     .image {
-        display: none;
+        display: block;
         position: relative;
-        padding-top: 90%;
+        padding-top: 20%;
     }
 
     .image img {
-        width: 90vw;
+        width: 80vw;
         height: 50vh;
     }
 }
@@ -180,25 +198,47 @@
     }
 
     .content {
-        top: 25%;
-        position: absolute;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        top: 28%;
+        position: relative;
         transform: translateY(-50%);
         color: #fff;
     }
 
     .content h1 {
-        font-size: 40px;
+        font-size: 2.5rem;
         font-weight: 600;
     }
 
-    .image {
-        display: none;
+    .content #countdown div {
+        flex-basis: 100px;
+    }
+
+    .content #countdown div span {
+        font-size: 3rem;
+    }
+
+    .content #countdown div .smalltext {
+        font-size: 1rem;
+    }
+
+    .content #button i {
+        font-size: 3rem;
         position: relative;
-        padding-top: 110%;
+        z-index: 99 !important;
+    }
+
+    .image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 35rem;
     }
 
     .image img {
-        width: 100vw;
-        height: 70vh;
+        height: 60vh;
+        position: absolute;
+        z-index: 1 !important;
     }
 }
