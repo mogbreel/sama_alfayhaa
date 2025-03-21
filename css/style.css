@@ -160,10 +160,12 @@
         font-size: 3rem;
         font-weight: 600;
     }
+
     .content #countdown {
         display: flex;
         justify-content: center;
     }
+
     .content #countdown div {
         text-align: center;
         flex-basis: 120px;
@@ -186,6 +188,10 @@
     .image img {
         width: 80vw;
         height: 50vh;
+    }
+
+    #rocket {
+        transform: translate(-50%, -50%);
     }
 }
 
@@ -240,5 +246,9 @@
         height: 60vh;
         position: absolute;
         z-index: 1 !important;
+    }
+
+    #rocket {
+        transform: translate(-50%, -50%);
     }
 }
