@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kufi', Arial;
+    direction: rtl;
+    transition: .3s ease;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Kufi';
+    src: url('Kufi.ttf');
+}
+
+.countdown-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../imgs/bg.png);
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+    position: relative;
+}
+
+.image {
+    position: absolute;
+    left: 0;
+    display: flex;
+}
+
+.image img {
+    width: 40vw;
+    height: 100vh;
+}
+
+.content {
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.content h1 {
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.content #button {
+    background: transparent;
+    padding: 30px 20px;
+    color: #fff;
+    position: relative;
+    transition: .3s ease;
+}
+
+.content #button::after {
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    right: 32%;
+    width: 0;
+    height: 3px;
+    background-color: #fff;
+}
+
+.content #button:hover:after {
+    width: 30px;
+}
+
+.content #button i {
+    font-size: 50px;
+}
+
+.content #countdown {
+    display: flex;
+    margin: 30px 0;
+}
+
+.content #countdown div {
+    flex-basis: 100px;
+    text-align: center;
+}
+
+.content #countdown div span {
+    font-size: 60px;
+    margin-bottom: -14px;
+}
+
+.content #countdown div .smalltext {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+/*=========== MEDIA QUERY ================== 
+============================================*/
+/*============ SCREEN 991 ===========*/
+@media (max-width:991px) {
+    .content h1 {
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .image img {
+        width: 45vw;
+    }
+}
+
+/*============ SCREEN 768 ===========*/
+@media (max-width:768px) {
+    .countdown-container {
+        display: block;
+        flex-direction: column !important;
+        height: 150vh;
+    }
+
+    .content {
+        top: 25%;
+        position: absolute;
+        transform: translateY(-50%);
+        color: #fff;
+    }
+
+    .content h1 {
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .image {
+        position: relative;
+        padding-top: 90%;
+    }
+
+    .image img {
+        width: 90vw;
+        height: 50vh;
+    }
+}
+
+/*============ SCREEN 500 ===========*/
+@media (max-width:500px) {
+    .countdown-container {
+        display: block;
+        flex-direction: column !important;
+        height: 150vh;
+    }
+
+    .content {
+        top: 25%;
+        position: absolute;
+        transform: translateY(-50%);
+        color: #fff;
+    }
+
+    .content h1 {
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .image {
+        position: relative;
+        padding-top: 110%;
+    }
+
+    .image img {
+        width: 100vw;
+        height: 70vh;
+    }
+}
