@@ -200,13 +200,14 @@
     .countdown-container {
         display: block;
         flex-direction: column !important;
-        height: 150vh;
+        height: 150vh !important;
+        overflow: hidden;
     }
 
     .content {
         text-align: center;
         transform: translate(-50%, -50%);
-        top: 28%;
+        top: 30%;
         position: relative;
         transform: translateY(-50%);
         color: #fff;
@@ -232,14 +233,15 @@
     .content #button i {
         font-size: 3rem;
         position: relative;
+        padding-bottom: 3rem;
         z-index: 99 !important;
     }
 
     .image {
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: center;
-        padding-top: 35rem;
+        padding-top: 20rem;
     }
 
     .image img {
